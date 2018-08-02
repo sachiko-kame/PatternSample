@@ -24,6 +24,7 @@ class SampleTableViewCell: UITableViewCell {
     
     func SetCell(text:String){
         sampleTextView.text = text
+        sampleTextView.attribute1(text:sampleTextView.text)
     }
 }
 

@@ -27,7 +27,7 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="00p-6g-afZ">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="00p-6g-afZ">
                         <rect key="frame" x="16" y="11" width="288" height="40"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="c5s-Tf-V9i"/>
@@ -52,6 +52,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="1.png" width="50" height="38"/>
+        <image name="Image" width="25" height="19"/>
     </resources>
 </document>
