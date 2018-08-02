@@ -9,7 +9,8 @@
 import UIKit
 
 class SampleTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var sampleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

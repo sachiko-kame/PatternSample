@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,19 +20,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWm-H4-doa">
-                        <rect key="frame" x="139" y="39" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWm-H4-doa">
+                        <rect key="frame" x="16" y="39" width="288" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="xWm-H4-doa" secondAttribute="trailing" id="AX5-70-uQW"/>
+                    <constraint firstItem="xWm-H4-doa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="28" id="QJS-he-ws1"/>
+                    <constraint firstItem="xWm-H4-doa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="f3u-Ie-cdh"/>
                     <constraint firstItem="xWm-H4-doa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="k46-5s-DsE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xWm-H4-doa" secondAttribute="bottom" constant="29" id="wjx-PS-IXB"/>
                     <constraint firstItem="xWm-H4-doa" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="zw0-UE-5wA"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="sampleLabel" destination="xWm-H4-doa" id="GQc-Ex-w3h"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

@@ -25,6 +25,7 @@
 		84C650B721133B6200CF136B /* default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C650B621133B6200CF136B /* default.swift */; };
 		84C650BB21133F1000CF136B /* SampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C650B921133F1000CF136B /* SampleTableViewCell.swift */; };
 		84C650BC21133F1000CF136B /* SampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C650BA21133F1000CF136B /* SampleTableViewCell.xib */; };
+		84C650BF2113460300CF136B /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 84C650BE2113460300CF136B /* sample.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		84C650B621133B6200CF136B /* default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = default.swift; sourceTree = "<group>"; };
 		84C650B921133F1000CF136B /* SampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell.swift; sourceTree = "<group>"; };
 		84C650BA21133F1000CF136B /* SampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
+		84C650BE2113460300CF136B /* sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				84C650AD2113339400CF136B /* subViewController */,
 				84C650A421132EEB00CF136B /* Extension */,
 				84C650B821133EE600CF136B /* parts */,
+				84C650BD211345E500CF136B /* data */,
 				84C6507D21132ED500CF136B /* Assets.xcassets */,
 				84C6507F21132ED500CF136B /* LaunchScreen.storyboard */,
 				84C6508221132ED500CF136B /* Info.plist */,
@@ -180,6 +183,14 @@
 				84C650BA21133F1000CF136B /* SampleTableViewCell.xib */,
 			);
 			path = parts;
+			sourceTree = "<group>";
+		};
+		84C650BD211345E500CF136B /* data */ = {
+			isa = PBXGroup;
+			children = (
+				84C650BE2113460300CF136B /* sample.json */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +305,7 @@
 				84C650B1211333B700CF136B /* sub1ViewController.xib in Resources */,
 				84C6507E21132ED500CF136B /* Assets.xcassets in Resources */,
 				84C6507C21132ED500CF136B /* Main.storyboard in Resources */,
+				84C650BF2113460300CF136B /* sample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
