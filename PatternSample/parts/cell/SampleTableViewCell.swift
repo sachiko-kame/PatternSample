@@ -9,10 +9,11 @@
 import UIKit
 
 class SampleTableViewCell: UITableViewCell {
-    @IBOutlet weak var sampleLabel: UILabel!
-    
+    @IBOutlet weak var sampleTextView: UITextView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        sampleTextView.isUserInteractionEnabled = true
+        sampleTextView.isEditable = false
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -20,4 +21,10 @@ class SampleTableViewCell: UITableViewCell {
     }
     
     static let height:CGFloat = 100
+    
+    func SetCell(text:String){
+        sampleTextView.text = text
+    }
 }
+
+

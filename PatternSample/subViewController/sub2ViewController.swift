@@ -53,7 +53,7 @@ extension sub2ViewController:UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(with: SampleTableViewCell.self, for: indexPath)
-        cell.sampleLabel.text = self.sampledata[indexPath.row]
+        cell.SetCell(text:self.sampledata[indexPath.row])
         return cell
     }
     

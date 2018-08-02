@@ -179,8 +179,7 @@
 		84C650B821133EE600CF136B /* parts */ = {
 			isa = PBXGroup;
 			children = (
-				84C650B921133F1000CF136B /* SampleTableViewCell.swift */,
-				84C650BA21133F1000CF136B /* SampleTableViewCell.xib */,
+				84C650C021134C2000CF136B /* cell */,
 			);
 			path = parts;
 			sourceTree = "<group>";
@@ -191,6 +190,15 @@
 				84C650BE2113460300CF136B /* sample.json */,
 			);
 			path = data;
+			sourceTree = "<group>";
+		};
+		84C650C021134C2000CF136B /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				84C650B921133F1000CF136B /* SampleTableViewCell.swift */,
+				84C650BA21133F1000CF136B /* SampleTableViewCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
