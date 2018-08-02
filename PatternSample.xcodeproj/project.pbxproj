@@ -17,6 +17,11 @@
 		84C650A621132F2C00CF136B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C650A521132F2C00CF136B /* UIColorExtension.swift */; };
 		84C650A821132F4D00CF136B /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C650A721132F4D00CF136B /* UITableViewExtension.swift */; };
 		84C650AA21132F6D00CF136B /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C650A921132F6D00CF136B /* NSObjectExtension.swift */; };
+		84C650AC211332D500CF136B /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C650AB211332D500CF136B /* ApplicationCoordinator.swift */; };
+		84C650B0211333B700CF136B /* sub1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C650AE211333B700CF136B /* sub1ViewController.swift */; };
+		84C650B1211333B700CF136B /* sub1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C650AF211333B700CF136B /* sub1ViewController.xib */; };
+		84C650B3211333C500CF136B /* sub2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C650B2211333C500CF136B /* sub2ViewController.swift */; };
+		84C650B5211333DB00CF136B /* sub3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C650B4211333DB00CF136B /* sub3ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		84C650A521132F2C00CF136B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		84C650A721132F4D00CF136B /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		84C650A921132F6D00CF136B /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		84C650AB211332D500CF136B /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		84C650AE211333B700CF136B /* sub1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sub1ViewController.swift; sourceTree = "<group>"; };
+		84C650AF211333B700CF136B /* sub1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = sub1ViewController.xib; sourceTree = "<group>"; };
+		84C650B2211333C500CF136B /* sub2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sub2ViewController.swift; sourceTree = "<group>"; };
+		84C650B4211333DB00CF136B /* sub3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sub3ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +114,10 @@
 			isa = PBXGroup;
 			children = (
 				84C6507621132ED500CF136B /* AppDelegate.swift */,
+				84C650AB211332D500CF136B /* ApplicationCoordinator.swift */,
 				84C6507821132ED500CF136B /* ViewController.swift */,
 				84C6507A21132ED500CF136B /* Main.storyboard */,
+				84C650AD2113339400CF136B /* subViewController */,
 				84C650A421132EEB00CF136B /* Extension */,
 				84C6507D21132ED500CF136B /* Assets.xcassets */,
 				84C6507F21132ED500CF136B /* LaunchScreen.storyboard */,
@@ -140,6 +152,17 @@
 				84C650A921132F6D00CF136B /* NSObjectExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		84C650AD2113339400CF136B /* subViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84C650AE211333B700CF136B /* sub1ViewController.swift */,
+				84C650AF211333B700CF136B /* sub1ViewController.xib */,
+				84C650B2211333C500CF136B /* sub2ViewController.swift */,
+				84C650B4211333DB00CF136B /* sub3ViewController.swift */,
+			);
+			path = subViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C6508121132ED500CF136B /* LaunchScreen.storyboard in Resources */,
+				84C650B1211333B700CF136B /* sub1ViewController.xib in Resources */,
 				84C6507E21132ED500CF136B /* Assets.xcassets in Resources */,
 				84C6507C21132ED500CF136B /* Main.storyboard in Resources */,
 			);
@@ -277,10 +301,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C6507921132ED500CF136B /* ViewController.swift in Sources */,
+				84C650B5211333DB00CF136B /* sub3ViewController.swift in Sources */,
+				84C650B0211333B700CF136B /* sub1ViewController.swift in Sources */,
 				84C650AA21132F6D00CF136B /* NSObjectExtension.swift in Sources */,
 				84C6507721132ED500CF136B /* AppDelegate.swift in Sources */,
 				84C650A621132F2C00CF136B /* UIColorExtension.swift in Sources */,
 				84C650A821132F4D00CF136B /* UITableViewExtension.swift in Sources */,
+				84C650B3211333C500CF136B /* sub2ViewController.swift in Sources */,
+				84C650AC211332D500CF136B /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
