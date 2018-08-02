@@ -21,19 +21,27 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="p4w-sn-eVG">
-                        <rect key="frame" x="36" y="36" width="248" height="28"/>
+                        <rect key="frame" x="36" y="56" width="248" height="28"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="00p-6g-afZ">
+                        <rect key="frame" x="16" y="11" width="288" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="c5s-Tf-V9i"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="p4w-sn-eVG" secondAttribute="bottom" constant="25" id="MEt-S8-hGm"/>
-                    <constraint firstItem="p4w-sn-eVG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="25" id="gtQ-B7-SgN"/>
+                    <constraint firstItem="p4w-sn-eVG" firstAttribute="top" secondItem="00p-6g-afZ" secondAttribute="bottom" constant="5" id="GDh-cJ-v26"/>
+                    <constraint firstItem="00p-6g-afZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Hk3-kS-0mE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="p4w-sn-eVG" secondAttribute="bottom" constant="5" id="MEt-S8-hGm"/>
                     <constraint firstItem="p4w-sn-eVG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="oRJ-vG-HzK"/>
+                    <constraint firstItem="00p-6g-afZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="qRC-fv-s2T"/>
                     <constraint firstAttribute="trailingMargin" secondItem="p4w-sn-eVG" secondAttribute="trailing" constant="20" id="v4Q-DR-UMf"/>
-                    <constraint firstItem="p4w-sn-eVG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wRx-pC-NXj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="00p-6g-afZ" secondAttribute="trailing" id="vPS-dv-ktY"/>
                     <constraint firstItem="p4w-sn-eVG" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="waP-OX-H0x"/>
                 </constraints>
             </tableViewCellContentView>
@@ -43,4 +51,7 @@
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="1.png" width="50" height="38"/>
+    </resources>
 </document>
