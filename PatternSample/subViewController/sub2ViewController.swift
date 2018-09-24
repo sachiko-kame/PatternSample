@@ -72,10 +72,17 @@ extension sub2ViewController:UITableViewDelegate, UITableViewDataSource{
         return 2
     }
     
-
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "セクション"
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?{
+        
+        let View:SampleTableHeaderView = Bundle.main.loadNibNamed("SampleTableHeaderView", owner: self, options: nil)!.first! as! SampleTableHeaderView
+    
+        return View
     }
+    
+
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return "セクション"
+//    }
     
     
 }
