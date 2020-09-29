@@ -16,12 +16,13 @@ extension UITextView{
         style.alignment = NSTextAlignment.left
         style.lineSpacing = 0.5 //行と行に間
         
-        let attr = [
-            NSForegroundColorAttributeName: UIColor.darkGray,
-            NSFontAttributeName: font,
-            NSParagraphStyleAttributeName: style,
-            NSKernAttributeName: 1  //文字間隔増える横と横の文字間隔
-            ] as [String : Any]
+        let attr: [NSAttributedString.Key : Any] = [
+            .font : font, // 文字色
+            .paragraphStyle : style, // カラー
+            .strokeColor : UIColor.darkGray, // 縁取りの色,
+            .kern:1,
+         
+        ]
         
         self.attributedText = NSAttributedString(string: "\(text)", attributes: attr)
         
